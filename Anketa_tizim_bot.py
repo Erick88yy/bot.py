@@ -1,6 +1,3 @@
-import os
-API_TOKEN = os.getenv("TELEGRAM_TOKEN")
-ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID") 
 import time
 import re
 from aiogram import Bot, Dispatcher, types
@@ -20,7 +17,7 @@ user_last_submission = {}
 survey_counter = 1 # Global anketalar uchun ketma-ket ID (1 dan boshlanadi)
 
 def format_remaining_time(seconds):
-hours = int(seconds // 3600)
+ hours = int(seconds // 3600)
 minutes = int((seconds % 3600) // 60)
 seconds = int(seconds % 60)
 return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
