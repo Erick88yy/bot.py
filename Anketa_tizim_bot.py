@@ -1,3 +1,6 @@
+import os
+API_TOKEN = os.getenv("TELEGRAM_TOKEN")
+ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID") 
 import time
 import re
 from aiogram import Bot, Dispatcher, types
